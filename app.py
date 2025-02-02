@@ -104,7 +104,7 @@ def main():
 
     # Display chat messages
     for message in st.session_state.messages:
-        with st.chat_message(message["role"], avatar = "Gita"):
+        with st.chat_message(message["role"], avatar = "🟨"):
             if message["role"] == "assistant":
                 thinking, answer = extract_thinking_and_answer(message["content"])
                 with st.expander("Show thinking process"):
@@ -116,7 +116,7 @@ def main():
     # Chat input
     if prompt := st.chat_input("Ask your question about the Bhagavad Gita..."):
         # Display user message
-        st.chat_message("user", avatar = "Seeker").markdown(prompt)
+        st.chat_message("user", avatar = "🟪").markdown(prompt)
         st.session_state.messages.append({"role": "user", "content": prompt})
 
         # Generate and display response
