@@ -43,7 +43,7 @@ message_templates = [
         ---------------------
         Given this information, please answer the question: {query}
         ---------------------
-        If the question is not from the provided context, say `I don't know. Not enough information received.`
+        If the question is not from the provided context, say `I don’t know yet, as I don’t have enough information. Thank you for your understanding.`
         """,
         role=MessageRole.USER,
     ),
