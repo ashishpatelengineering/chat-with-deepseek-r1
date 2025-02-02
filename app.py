@@ -86,7 +86,8 @@ def extract_thinking_and_answer(response_text):
         return "", response_text
 
 def main():
-    st.title("🕉️ Bhagavad Gita Assistant")
+    st.title("The Bhagavad Gita")
+    st.write("Introduced and Translated by Eknath Easwaran")
     embed_model, llm, client = initialize_models() # this will run only once, and be saved inside the cache
     
     if "messages" not in st.session_state:
