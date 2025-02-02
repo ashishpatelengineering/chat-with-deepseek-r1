@@ -120,7 +120,7 @@ def main():
         st.session_state.messages.append({"role": "user", "content": prompt})
 
         # Generate and display response
-        with st.chat_message("assistant"):
+        with st.chat_message("assistant", avatar = "🟨"):
             message_placeholder = st.empty()
             with st.spinner("Thinking..."):
                 full_response = pipeline(prompt, embed_model, llm, client)
