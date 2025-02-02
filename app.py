@@ -50,7 +50,7 @@ message_templates = [
 ]
 
 def search(query, client, embed_model, k=5):
-    collection_name = "bhagavad-gita"
+    collection_name = "bhagavad-gita-3"
     query_embedding = embed_model.get_query_embedding(query)
     result = client.query_points(
         collection_name=collection_name,
