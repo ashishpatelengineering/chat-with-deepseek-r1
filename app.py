@@ -88,9 +88,9 @@ def extract_thinking_and_answer(response_text):
 def main():
     st.title("The Bhagavad Gita")
     st.write("Introduced and Translated by Eknath Easwaran")
-    left_co, cent_co,last_co = st.columns(3)
-    with cent_co:
-        st.image("bhagavadgita.jpg")
+    # left_co, cent_co,last_co = st.columns(3)
+    # with cent_co:
+    st.image("bhagavadgita.jpg")
 
     embed_model, llm, client = initialize_models() # this will run only once, and be saved inside the cache
     
