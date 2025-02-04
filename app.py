@@ -90,7 +90,7 @@ def main():
     st.write("Introduced and Translated by Eknath Easwaran")
     left_co, cent_co,last_co = st.columns(3)
     with cent_co:
-        st.image("eknatheaswaran.jpg")
+        st.image("bhagavadgita.jpg")
 
     embed_model, llm, client = initialize_models() # this will run only once, and be saved inside the cache
     
